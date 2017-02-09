@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+.searchBarContainer {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    input {
+        margin: 0 auto;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+.display {
+    display: inline-block;
+    text-align: center;
+    background-color: lightskyblue;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 40px;
+    div {
+        width: 30%;
+        float: left;
+        //border: 2px solid cornflowerblue;
+    }
+}
+
+.result {
+    padding: 20px;
+    height: 300px;
+    width: 240px;
+    img {
+        height: 200px;
+    }
+}
