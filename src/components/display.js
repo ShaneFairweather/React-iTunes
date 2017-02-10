@@ -7,8 +7,8 @@ const Display = (props) => {
     const resultsList = newArray.map((item) => {
         return (
             <Result artistName={item.artistName}
-                    trackName={item.artistName}
-                    imageUrl={item.artworkUrl100}
+                    trackName={item.trackName}
+                    imageUrl={item.artworkUrl100.replace('100x100', '1200x1200')}
                     trackUrl={item.trackViewUrl} />
         )
     })

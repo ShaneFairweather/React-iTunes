@@ -19,8 +19,8 @@ var Display = function Display(props) {
     var newArray = shortList.slice(0, 15);
     var resultsList = newArray.map(function (item) {
         return _react2.default.createElement(_result2.default, { artistName: item.artistName,
-            trackName: item.artistName,
-            imageUrl: item.artworkUrl100,
+            trackName: item.trackName,
+            imageUrl: item.artworkUrl100.replace('100x100', '1200x1200'),
             trackUrl: item.trackViewUrl });
     });
     return _react2.default.createElement(

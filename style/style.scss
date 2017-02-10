@@ -8,10 +8,12 @@ html, body {
 .title {
     color: white;
     width: 100%;
+    padding: 20px;
+    background-color: $dark;
     h1 {
         text-align: center;
         font-weight: 100;
-        background-color: $dark;
+        //background-color: $dark;
         color: white;
     }
 }
@@ -36,19 +38,14 @@ html, body {
     background-color: #FAFAFA;
     border-radius: 8px;
     padding: 40px;
-
-    div {
-        width: 30%;
-        float: left;
-        //border: 2px solid cornflowerblue;
-    }
+    width: 100%;
 }
 
 .result {
-    padding: 20px;
-    height: 300px;
-    width: 240px;
     color: $dark;
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px;
     a {
         color: $dark;
 
@@ -56,7 +53,34 @@ html, body {
     a:hover {
         text-decoration: none;
     }
-    img {
-        height: 200px;
+}
+
+.result {
+    overflow: hidden;
+    div {
+        display: inline-block;
     }
+}
+
+.resultImg {
+    max-height: 100%;
+    overflow:hidden;
+    float: left;
+    img {
+        float:left;
+        max-width: 100% !important;
+        height: 150px;
+        width: auto;
+        float:left;
+    }
+}
+.resultInfo {
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+    float: left;
+    margin-left: 20px;
+
+}
+
+.clearBox {
+    clear: both;
 }

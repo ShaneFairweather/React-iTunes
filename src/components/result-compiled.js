@@ -17,16 +17,25 @@ var Result = function Result(props) {
         _react2.default.createElement(
             "a",
             { href: props.trackUrl },
-            _react2.default.createElement("img", { src: props.imageUrl }),
             _react2.default.createElement(
-                "h3",
-                null,
-                props.artistName
+                "div",
+                { className: "resultImg" },
+                _react2.default.createElement("img", { src: props.imageUrl }),
+                _react2.default.createElement("div", { className: "clearBox" })
             ),
             _react2.default.createElement(
-                "h5",
-                null,
-                props.trackName
+                "div",
+                { className: "resultInfo" },
+                _react2.default.createElement(
+                    "h3",
+                    null,
+                    props.trackName
+                ),
+                _react2.default.createElement(
+                    "h5",
+                    null,
+                    props.artistName
+                )
             )
         )
     );
