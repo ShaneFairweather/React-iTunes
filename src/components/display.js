@@ -8,7 +8,7 @@ const Display = (props) => {
         return (
             <Result artistName={item.artistName}
                     trackName={item.artistName}
-                    imageUrl={item.artworkUrl512}
+                    imageUrl={item.artworkUrl100}
                     trackUrl={item.trackViewUrl} />
         )
     })

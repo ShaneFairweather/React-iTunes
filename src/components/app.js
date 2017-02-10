@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import _ from  'lodash';
 import Title from './title';
 import SearchBar from './searchbar';
 import Display from './display';
@@ -32,6 +33,9 @@ export default class App extends Component {
 
 
     render() {
+        const itunesSearch = _.debounce((term) => {this.getResults(term)}, 300)
+
+
         return (
               <div>
                   <Title />

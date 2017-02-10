@@ -1,6 +1,21 @@
-h1 {
-    text-align: center;
+$dark: #333;
+
+html, body {
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
+
+.title {
+    color: white;
+    width: 100%;
+    h1 {
+        text-align: center;
+        font-weight: 100;
+        background-color: $dark;
+        color: white;
+    }
+}
+
 
 .searchBarContainer {
     width: 1000px;
@@ -18,10 +33,10 @@ h1 {
 .display {
     display: inline-block;
     text-align: center;
-    background-color: lightskyblue;
+    background-color: #FAFAFA;
     border-radius: 8px;
-    border: 2px solid black;
     padding: 40px;
+
     div {
         width: 30%;
         float: left;
@@ -33,6 +48,14 @@ h1 {
     padding: 20px;
     height: 300px;
     width: 240px;
+    color: $dark;
+    a {
+        color: $dark;
+
+    }
+    a:hover {
+        text-decoration: none;
+    }
     img {
         height: 200px;
     }

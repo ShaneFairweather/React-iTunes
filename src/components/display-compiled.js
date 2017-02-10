@@ -20,7 +20,7 @@ var Display = function Display(props) {
     var resultsList = newArray.map(function (item) {
         return _react2.default.createElement(_result2.default, { artistName: item.artistName,
             trackName: item.artistName,
-            imageUrl: item.artworkUrl512,
+            imageUrl: item.artworkUrl100,
             trackUrl: item.trackViewUrl });
     });
     return _react2.default.createElement(

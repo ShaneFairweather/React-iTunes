@@ -10,6 +10,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
 var _title = require('./title');
 
 var _title2 = _interopRequireDefault(_title);
@@ -67,6 +71,10 @@ var App = function (_Component) {
         key: 'render',
         value: function render() {
             var _this3 = this;
+
+            var itunesSearch = _lodash2.default.debounce(function (term) {
+                _this3.getResults(term);
+            }, 300);
 
             return _react2.default.createElement(
                 'div',
