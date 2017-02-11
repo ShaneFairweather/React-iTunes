@@ -22,9 +22,17 @@ var _searchbar = require('./searchbar');
 
 var _searchbar2 = _interopRequireDefault(_searchbar);
 
+var _selected = require('./selected');
+
+var _selected2 = _interopRequireDefault(_selected);
+
 var _display = require('./display');
 
 var _display2 = _interopRequireDefault(_display);
+
+var _footer = require('./footer');
+
+var _footer2 = _interopRequireDefault(_footer);
 
 var _axios = require('axios');
 
@@ -48,18 +56,22 @@ var App = function (_Component) {
 
         _this.state = {
             term: "lightspeed champion",
-            results: []
+            results: [],
+            selected: null,
+            type: "&entity=song"
         };
         _this.getResults = _this.getResults.bind(_this);
+        // this.getSelected = this.getSelected.bind(this);
         return _this;
     }
 
     _createClass(App, [{
         key: 'getResults',
-        value: function getResults(term) {
+        value: function getResults(term, type) {
             var _this2 = this;
 
-            _axios2.default.get('https://itunes.apple.com/search?term=' + term).then(function (response) {
+            var url = 'https://itunes.apple.com/search?term=' + term + this.state.type;
+            _axios2.default.get(url).then(function (response) {
                 console.log("success");
                 console.log(response.data.results[0].trackName);
                 _this2.setState({ results: response.data.results });
@@ -67,6 +79,13 @@ var App = function (_Component) {
                 console.log(error);
             });
         }
+
+        // getSelected(item) {
+        //     this.setState({selected: ""});
+        //     console.log(item);
+        // }
+
+
     }, {
         key: 'render',
         value: function render() {
@@ -78,12 +97,21 @@ var App = function (_Component) {
 
             return _react2.default.createElement(
                 'div',
-                null,
+                { id: 'main' },
                 _react2.default.createElement(_title2.default, null),
                 _react2.default.createElement(_searchbar2.default, { getResults: function getResults(term) {
                         return _this3.getResults(term);
                     } }),
-                _react2.default.createElement(_display2.default, { results: this.state.results })
+                _react2.default.createElement(
+                    'div',
+                    { className: 'content' },
+                    _react2.default.createElement(_selected2.default, { selected: this.state.selected }),
+                    _react2.default.createElement(_display2.default, { results: this.state.results,
+                        getSelected: function getSelected(item) {
+                            return _this3.setState({ selected: item });
+                        } })
+                ),
+                _react2.default.createElement(_footer2.default, null)
             );
         }
     }]);

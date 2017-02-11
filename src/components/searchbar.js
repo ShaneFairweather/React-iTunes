@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 export default class SearchBar extends Component {
     constructor(props) {
@@ -23,6 +22,7 @@ export default class SearchBar extends Component {
                        value={this.state.term}
                        onChange={event => this.onInputChange(event.target.value)}
                 />
+                {/*<button><i id="searchIcon" className="fa fa-search" /></button>*/}
             </div>
         )
     }
