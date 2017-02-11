@@ -33,7 +33,7 @@ var Display = function Display(props) {
         return _react2.default.createElement(
             'div',
             { className: 'lead' },
-            'Type in the search bar to get started'
+            'Type in the search bar to find a song'
         );
     } else {
         return _react2.default.createElement(

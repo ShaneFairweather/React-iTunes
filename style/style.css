@@ -90,6 +90,12 @@ a:hover {
       border: none;
       padding: 5px; }
 
+.selectedTime {
+  float: left;
+  position: absolute;
+  right: 10px;
+  bottom: 109px; }
+
 .selectedPrice {
   float: left;
   color: gray;

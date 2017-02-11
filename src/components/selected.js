@@ -18,9 +18,11 @@ const Selected = ({selected}) => {
             <div className="selectedContent">
                 <h3>{selected.trackName}</h3>
                 <p>{selected.artistName}</p>
-                {/*<p>{selected.releaseDate.slice(0, 4)}</p>*/}
                 <p>{selected.albumName}</p>
-                <p>{parseTime(selected.trackTime)}</p>
+                {/*<p>{selected.releaseDate.slice(0, 4)}</p>*/}
+                {/*<div className="selectedTime">*/}
+                    <p>{parseTime(selected.trackTime)}</p>
+                {/*</div>*/}
                 <div className="selectedPrice">
                     <p>${selected.trackPrice}</p>
                 </div>

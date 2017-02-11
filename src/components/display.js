@@ -19,7 +19,7 @@ const Display = (props) => {
         )
     })
     if (shortList.length == 0) {
-        return <div className="lead">Type in the search bar to get started</div>
+        return <div className="lead">Type in the search bar to find a song</div>
     } else {
         return (
             <div className="display">
