@@ -4,6 +4,7 @@
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "homepage": "https://shanefairweather.github.io/React-iTunes/",
   "scripts": {
     "build":"webpack",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -38,5 +39,4 @@
     "react-router": "^2.0.1",
     "redux": "^3.0.4"
   },
-  "homepage": "https://shanefairweather.github.io/React-iTunes/"
 }

@@ -81,14 +81,12 @@ a:hover {
     max-width: 100%; }
   .selected .selectedContent h2, .selected .selectedContent h3, .selected .selectedContent h4, .selected .selectedContent h5, .selected .selectedContent p {
     margin: 0; }
-  .selected .selectedContent {
-    height: 400px; }
-    .selected .selectedContent button, .selected .selectedContent a {
-      background-color: #4897fa;
-      border-radius: 6px;
-      color: white;
-      border: none;
-      padding: 5px; }
+  .selected .selectedContent button, .selected .selectedContent a {
+    background-color: #4897fa;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    padding: 5px; }
 
 .selectedTime {
   float: left;
