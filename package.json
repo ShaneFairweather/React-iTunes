@@ -6,12 +6,11 @@
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "homepage": "https://shanefairweather.github.io/React-iTunes/",
   "scripts": {
-    "build":"webpack",
+    "build": "webpack",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy" : "npm run build&&gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
