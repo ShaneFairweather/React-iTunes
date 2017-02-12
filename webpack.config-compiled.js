@@ -1,7 +1,7 @@
+'use strict';
+
 module.exports = {
-  entry: [
-    './src/index.js'
-  ],
+  entry: ['./src/index.js'],
   output: {
     // path: __dirname,
     path: path.join(__dirname, '/dist'),
@@ -25,3 +25,5 @@ module.exports = {
     contentBase: './'
   }
 };
+
+//# sourceMappingURL=webpack.config-compiled.js.map
