@@ -60,4 +60,7 @@ var SearchBar = function (_Component) {
 
 exports.default = SearchBar;
 
+
+{/*<button><i id="searchIcon" className="fa fa-search" /></button>*/}
+
 //# sourceMappingURL=searchbar-compiled.js.map
